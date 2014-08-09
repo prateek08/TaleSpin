@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/invitee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        />
+
+    <TextView
+        android:id="@+id/invite_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_alignStart="@android:id/text1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+    />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:textIsSelectable="false"
+            android:clickable="true"
+            android:text="Accept"
+             />
+
+        <Button
+            android:id="@+id/decline_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:textIsSelectable="false"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:text="Decline"
+
+             />
+    </LinearLayout>
+
+</LinearLayout>
