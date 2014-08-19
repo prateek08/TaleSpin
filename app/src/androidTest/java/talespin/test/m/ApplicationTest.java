@@ -1,4 +1,4 @@
-package com.example.test.hackathonday1;
+package talespin.test.m;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

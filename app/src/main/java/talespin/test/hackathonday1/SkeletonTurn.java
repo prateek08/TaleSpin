@@ -1,4 +1,4 @@
-package com.example.test.hackathonday1;
+package talespin.test.hackathonday1;
 
 
 import java.io.UnsupportedEncodingException;
@@ -23,27 +23,6 @@ public class SkeletonTurn {
     public int turnCounter;
     public String storyTitle = "";
     public SkeletonTurn() {
-    }
-
-    // This is the byte array we will write out to the TBMP API.
-    public byte[] persist() {
-        JSONObject retVal = new JSONObject();
-
-        try {
-            retVal.put("data", data);
-            retVal.put("turnCounter", turnCounter);
-            retVal.put("storyTitle", storyTitle);
-
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        String st = retVal.toString();
-
-        Log.d(TAG, "==== PERSISTING\n" + st);
-
-        return st.getBytes(Charset.forName("UTF-16"));
     }
 
     // Creates a new instance of SkeletonTurn.
@@ -85,5 +64,26 @@ public class SkeletonTurn {
         }
 
         return retVal;
+    }
+
+    // This is the byte array we will write out to the TBMP API.
+    public byte[] persist() {
+        JSONObject retVal = new JSONObject();
+
+        try {
+            retVal.put("data", data);
+            retVal.put("turnCounter", turnCounter);
+            retVal.put("storyTitle", storyTitle);
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        String st = retVal.toString();
+
+        Log.d(TAG, "==== PERSISTING\n" + st);
+
+        return st.getBytes(Charset.forName("UTF-16"));
     }
 }
