@@ -1,4 +1,4 @@
-package com.example.test.hackathonday1;
+package talespin.test.hackathonday1;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
