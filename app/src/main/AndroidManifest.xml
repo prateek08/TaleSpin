@@ -17,9 +17,10 @@
 
         <activity
             android:name=".SkeletonActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -31,6 +32,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="talespin.test.hackathonday1.SkeletonActivity" />
         </activity>
+        <activity
+            android:name=".StoryWriteActivity"
+            android:label="@string/title_activity_story_write"></activity>
     </application>
 
 </manifest>

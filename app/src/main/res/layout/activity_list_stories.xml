@@ -6,15 +6,38 @@
 
     <Button
         android:id="@+id/start_new_story"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Story" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:choiceMode="singleChoice"
-        tools:listitem="@android:layout/simple_list_item_1" />
+        android:background="#ffcccccc"
+        android:text="My Turn"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff224444" />
+
+    <ListView
+        android:id="@+id/myTurnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/oppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:text="Opponent Turn"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff224444" />
+
+    <ListView
+        android:id="@+id/theirTurnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
 
 </LinearLayout>
